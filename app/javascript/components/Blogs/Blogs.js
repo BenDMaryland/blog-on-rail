@@ -12,7 +12,7 @@ function Blogs() {
     }, [blogs.length])
 
 
-    if (blogs ===[]) return <h1>loading</h1>
+    if (blogs ===[]) return <h1>loasding</h1>
     console.log(blogs)
     return (
 
