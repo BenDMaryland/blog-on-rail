@@ -8,12 +8,13 @@ function Blogs() {
     axios.get("api/v1/blogs.json")
     .then(r=>setblogs(r.data.data) )
     .catch(r=>console.log(r))
-
+    console.log(blogs)
     }, [blogs.length])
 
-
-    if (blogs.length ===0) return <h1>loasding</h1>
+console.log(blogs)
+    if (blogs.length ===0) return <h1>loading</h1>
     console.log(blogs[1].attributes.blog_title)
+    console.log(blogs)
     return (
 
 

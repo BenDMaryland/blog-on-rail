@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem "fast_jsonapi"
 gem 'pry', '~> 0.13.1'
+# gem 'activerecord-jdbcpostgresql-adapter'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
