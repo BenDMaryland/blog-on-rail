@@ -20,7 +20,7 @@ function Blogs() {
 
 
         <div>
-          <h1> </h1>  
+          <h1>loading</h1>
         </div>
     )
 }
