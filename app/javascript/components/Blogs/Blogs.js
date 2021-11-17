@@ -12,15 +12,16 @@ function Blogs() {
     }, [blogs.length])
 
 
-    if (blogs ===[]) return <h1>loasding</h1>
-    console.log(blogs)
+    if (blogs.length ===0) return <h1>loasding</h1>
+    console.log(blogs[1].attributes.blog_title)
     return (
 
 
 
 
         <div>
-          <h1>loading</h1>
+            <h1>sssssssssssssss</h1>
+          <h1>{blogs[1].attributes.blog_title}</h1>
         </div>
     )
 }
