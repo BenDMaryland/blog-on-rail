@@ -1,66 +1,4 @@
-import React,{useState,useEffect} from 'react'
-import { Route, Routes   } from "react-router-dom";
-import Blog from './Blog/Blog'
-import Blogs from './Blogs/Blogs'
-import axios, { Axios } from 'axios'
-import Header from './Header';
-import SideBar from './SideBar';
-import styled from 'styled-components'
-
-
-
-
-function App() {
-  const [fetchedBlogs, setfetchedBlogs] = useState([])
-const [sluger, setsluger] = useState()
-
-    useEffect(() => {
-  fetch 
-
-    axios.get("api/v1/blogs.json")
-    .then(r=>setfetchedBlogs(r.data.data) )
-    .catch(r=>console.log(r))
-    }, [fetchedBlogs.length])
-
-
-  function slugHandler(slug){
-    setsluger(slug)
- console.log(slug)
-
-  }
-
-
-
-    if (fetchedBlogs.length ===0) return <h1>loabding</h1>
-
-    return (
-      <Hope>
-        
-
-        <SideBar />
-<main>
-
-
-<div className="helper">
-
-<br/>
-<Header style={{"position":"absolute"  }} /> 
-<Routes >
-
-            <Route exact path="/"  element={  fetchedBlogs.map((fetchedBlog)=> {return (       <Blogs key={fetchedBlog.id} slugHandler={slugHandler}  fetchedBlog={fetchedBlog}  /> )}  ) }  />
-            <Route exact path="/:id"  element={< Blog sluger={sluger}  /> }/>
-          
-    
-        </Routes >
-        </div >
-        </main>
-        </Hope>
-    )
-}
-
-export default App
-
-const Hope= styled.div`@color-1st: #ffea92;
+/* @color-1st: #ffea92;
 @color-2nd: #5bc995;
 
 @menu-width-desktop: 240px;
@@ -307,4 +245,4 @@ main{
 			}
 		}
 	}
-}`
+} */
