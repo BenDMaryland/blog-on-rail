@@ -6,7 +6,7 @@ function SideBar() {
         <nav className="sidebar" tabIndex="0">
         <div className="smartphone-menu-trigger"></div>
       <header className="avatar">
-            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQG4xO_PFmycLQ/profile-displayphoto-shrink_400_400/0/1633307960580?e=1642636800&v=beta&t=E7xycAspu2nDDUHEsrJGqVQN7ES_bS9Kf3EdJgST1Gc" />
+            <img   style={{ "width": "260px"}} src="https://media-exp1.licdn.com/dms/image/C4D03AQG4xO_PFmycLQ/profile-displayphoto-shrink_400_400/0/1633307960580?e=1642636800&v=beta&t=E7xycAspu2nDDUHEsrJGqVQN7ES_bS9Kf3EdJgST1Gc" />
         <h2 style={{"color": "white"}} >Ben.D</h2>
       </header>
         <div>

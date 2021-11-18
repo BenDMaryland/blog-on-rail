@@ -36,6 +36,7 @@ console.log(fetchedBlog.included)
           <br/>
           <br/>
           <h2>{fetchedBlog.data.attributes.blog_title} </h2>  
+          <img   src={fetchedBlog.data.attributes.image_url}     /> 
           <p>{fetchedBlog.data.attributes.blog_post}</p>
           <CommentAdd fetchedBlog={fetchedBlog} />
          {       fetchedBlog.included.map ( (comment)=> {  return      <Comments key={comment.id} comment={comment} />  }  )        }

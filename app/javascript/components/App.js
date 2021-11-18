@@ -6,7 +6,7 @@ import axios, { Axios } from 'axios'
 import Header from './Header';
 import SideBar from './SideBar';
 import styled from 'styled-components'
-
+import RightBar from './RightBar';
 
 
 
@@ -34,10 +34,11 @@ const [sluger, setsluger] = useState()
     if (fetchedBlogs.length ===0) return <h1>loabding</h1>
 
     return (
-      <Hope>
+      <Hope className="hope">
         
 
         <SideBar />
+		<RightBar />
 <main>
 <br/>
 <br/>
@@ -97,12 +98,12 @@ main{
     background-color:#ffea92;
 		color:@color-1st;
 		position:absolute;
-		
+
 		 left:20%;
 	right:20%;
-		padding:1.2em 2em;
+		
 		text-align:center;
-		border-radius:20px;
+	
 
 		
 		span{
@@ -352,5 +353,24 @@ p{
   background-color: #111;
   overflow-x: hidden;
   padding-top: 16px;
+}
+
+.rightbar {
+	height: 50%;
+	width: 260px;
+	position: fixed;
+	z-index: 1;
+	top: 20;
+	border-radius: 25px;
+	right: 0;
+	color: white;
+	text-align: center;
+	background-color: rgb(32, 33, 36);
+	overflow-x: hidden;
+	padding-top: 16px;
+  }
+
+.hope{
+	top:100;
 }
 `

@@ -14,7 +14,7 @@ if(!slug) return <h1>sssss</h1>
         <div     >
             <h1 >{blog_title}</h1>
             <img src={image_url}  ></img>
-            <p>{slug}</p>
+           
           
         </div>
         </Link>
