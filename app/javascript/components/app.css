@@ -24,6 +24,7 @@ main{
 	height:100vh;
 	
 	.helper{
+		white-space: pre-wrap;
 		background:rgba(0,0,0,0.2);
 		color:@color-1st;
 		position:absolute;

@@ -39,12 +39,17 @@ const [sluger, setsluger] = useState()
 
         <SideBar />
 <main>
-
-
+<br/>
+<br/>
+<br/>
+<Header className="header" style={{"text-align":"center"  }}   /> 
+<br/>
+<br/>
+<br/>
 <div className="helper">
 
-<br/>
-<Header style={{"position":"absolute"  }} /> 
+
+
 <Routes >
 
             <Route exact path="/"  element={  fetchedBlogs.map((fetchedBlog)=> {return (       <Blogs key={fetchedBlog.id} slugHandler={slugHandler}  fetchedBlog={fetchedBlog}  /> )}  ) }  />
@@ -60,7 +65,8 @@ const [sluger, setsluger] = useState()
 
 export default App
 
-const Hope= styled.div`@color-1st: #ffea92;
+const Hope= styled.div`
+@color-1st: #ffea92;
 @color-2nd: #5bc995;
 
 @menu-width-desktop: 240px;
@@ -74,29 +80,30 @@ const Hope= styled.div`@color-1st: #ffea92;
 @icon-url-settings: "@{icon-url-base}/tools.svg";
 
 body{
-	background:@color-1st;
+	
 	margin:0;
 	font-family:"Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 	color:#fff;
+  border:solid;
 	padding-left:@menu-width-desktop;
 }
 
 main{
-	position:relative;
-	height:100vh;
 	
+	height:1000vh;
+	background-color:rgb(195, 169, 255);
+  text-align: center;
 	.helper{
-		background:rgba(0,0,0,0.2);
+    background-color:#ffea92;
 		color:@color-1st;
 		position:absolute;
-		top:50%;
-		left:50%;
-		transform:translate3d(-50%,-50%,0);
+		
+		 left:20%;
+	right:20%;
 		padding:1.2em 2em;
 		text-align:center;
 		border-radius:20px;
-		font-size:2em;
-		font-weight:bold;
+
 		
 		span{
 			color:rgba(0,0,0,0.2);
@@ -307,4 +314,43 @@ main{
 			}
 		}
 	}
-}`
+}
+
+p{
+  text-align:left;
+  line-height: 32px;
+	white-space: pre-wrap;
+  
+  letter-spacing: -0.003em;
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.header{
+
+  text-align: right;
+
+}
+ a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+
+ a:hover {
+  color: #f1f1f1;
+}
+.sidebar {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+`

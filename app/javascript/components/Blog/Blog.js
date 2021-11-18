@@ -26,12 +26,17 @@ axios.get(`api/v1/blogs/${location.pathname}`)
 
 
 if (!fetchedBlog) return <h1>fffffffffffffffff</h1>
-// console.log(fetchedBlog.attributes.blog_title)
+
 
 
     return (
         <div>
-          <h1>{fetchedBlog.attributes.blog_title} </h1>  
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <h2>{fetchedBlog.attributes.blog_title} </h2>  
+          <p>{fetchedBlog.attributes.blog_post}</p>
         </div>
     )
 }

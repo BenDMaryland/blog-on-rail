@@ -3,21 +3,25 @@ import React from 'react'
 function SideBar() {
     return (
      
-        <nav className="menu" tabIndex="0">
+        <nav className="sidebar" tabIndex="0">
         <div className="smartphone-menu-trigger"></div>
       <header className="avatar">
             <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
-        <h2>John D.</h2>
+        <h2>Ben.D</h2>
       </header>
-        <ul>
-        <li tabIndex="0" className="icon-dashboard"><span>Dashboard</span></li>
-        <li tabIndex="0" className="icon-customers"><span>Customers</span></li>
-        <li tabIndex="0" className="icon-users"><span>Users</span></li>
-        <li tabIndex="0" className="icon-settings"><span>Settings</span></li>
-      </ul>
+        <div>
+        <a href="https://www.linkedin.com/in/ben-darago/"  tabIndex="0" className="icon-dashboard"><span>LinkedIn</span></a>
+        <br/>
+        <a href="https://github.com/BenDMaryland"  tabIndex="0" className="icon-dashboard"><span>GitHub</span></a>
+        <br/>
+        <a href="https://a-blog-on-rails.herokuapp.com/"  tabIndex="0" className="icon-dashboard"><span>Blog</span></a>
+        <br/>
+        <a href="https://github.com/BenDMaryland/Final-projectv-v.2"  tabIndex="0" className="icon-dashboard"><span>Projects</span></a>
+      </div>
     </nav>
     
     )
 }
 
 export default SideBar
+
