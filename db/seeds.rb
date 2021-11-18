@@ -244,8 +244,8 @@ Hello! Please work
     
 
     
-    com1= Comment.create(comment_name:"Bill gates", comment_title:"Wow amazing post ", blog_id:blog1.id)
-    
+    com1= Comment.create(comment_name:"Bill gates", comment_title:"Wow amazing post ", blog_id:blog2.id)
+    com1= Comment.create(comment_name:"Steve Jobs", comment_title:"Genius post!", blog_id:blog2.id)
     
     
     
