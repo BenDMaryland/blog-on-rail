@@ -3,6 +3,9 @@ module Api
         class CommentsController < ApplicationController
             protect_from_forgery with: :null_session
             def create 
+                
+                binding.pry
+                
                 comment = Comment.new(comment_params)
 
                 if comment.save
@@ -11,6 +14,9 @@ module Api
                     render json: {error: review.error.message}, status: 422
                 end
             end
+
+
+
 
             def destroy 
                 comment = Comment.find(params[:id])

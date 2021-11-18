@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 
 
@@ -25,9 +26,18 @@ function handleChange(e){
 
 
 function sumbitHandler(e){
-    console.log("dsdsd")
+    console.log(fetchedBlog)
     e.preventDefault()
 console.log(CommentData)
+let blog_id= fetchedBlog.data.id 
+let comments=CommentData
+axios.post(`/api/v1/comments`, {...comments,blog_id })
+.then(r=>console.log(r))
+
+
+
+
+
 
 
 }
