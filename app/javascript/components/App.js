@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import { Route, Routes   } from "react-router-dom";
+import { NavLink, Route, Routes   } from "react-router-dom";
 import Blog from './Blog/Blog'
 import Blogs from './Blogs/Blogs'
 import axios, { Axios } from 'axios'
@@ -7,6 +7,7 @@ import Header from './Header';
 import SideBar from './SideBar';
 import styled from 'styled-components'
 import RightBar from './RightBar';
+import NewBlog from './NewBlog';
 
 
 
@@ -32,7 +33,7 @@ const [sluger, setsluger] = useState()
 
 
     if (fetchedBlogs.length ===0) return <h1>loabding</h1>
-
+console.log(fetchedBlogs[0])
     return (
       <Hope className="hope">
         
@@ -46,6 +47,10 @@ const [sluger, setsluger] = useState()
 <Header className="header" style={{"text-align":"center"  }}   /> 
 <br/>
 <br/>
+		<NavLink className='links' to='/'>Home</NavLink>
+        <NavLink className='links' to='/newblog'>Post a Blog</NavLink>
+        <NavLink className='links' to= {`/${fetchedBlogs.reverse()[0].attributes.slug}`}    >Newest Blog</NavLink>
+
 <br/>
 <div className="helper">
 
@@ -53,8 +58,9 @@ const [sluger, setsluger] = useState()
 
 <Routes >
 
-            <Route exact path="/"  element={  fetchedBlogs.map((fetchedBlog)=> {return (       <Blogs key={fetchedBlog.id} slugHandler={slugHandler}  fetchedBlog={fetchedBlog}  /> )}  ) }  />
-            <Route exact path="/:id"  element={< Blog sluger={sluger}  /> }/>
+            <Route exact path="/"  element={  fetchedBlogs.reverse().map((fetchedBlog)=> {return (       <Blogs key={fetchedBlog.id} slugHandler={slugHandler}  fetchedBlog={fetchedBlog}  /> )}  ) }  />
+		    <Route exact path="/newblog" element={   <NewBlog />  }/>
+		    <Route exact path="/:id"  element={< Blog sluger={sluger}  /> }/>
           
     
         </Routes >
@@ -90,17 +96,16 @@ body{
 }
 
 main{
-	
 	height:1000vh;
-	background-color:rgb(195, 169, 255);
   text-align: center;
+
 	.helper{
-    background-color:#ffea92;
+
 		color:@color-1st;
 		position:absolute;
 
-		 left:20%;
-	right:20%;
+		 left:30%;
+		right:25%;
 		
 		text-align:center;
 	
@@ -340,12 +345,10 @@ p{
 }
 
 
- a:hover {
-  color: #f1f1f1;
-}
+
 .sidebar {
   height: 100%;
-  width: 260px;
+  width: 10%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -357,7 +360,7 @@ p{
 
 .rightbar {
 	height: 50%;
-	width: 260px;
+	width: 10%;
 	position: fixed;
 	z-index: 1;
 	top: 20;
