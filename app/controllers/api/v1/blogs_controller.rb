@@ -25,7 +25,9 @@ module Api
 
             def create 
                 blog = Blog.new(blog_params)
-
+                
+                binding.pry
+                
                 if blog.save
                     render json: BlogSerializer.new(blog).serialized_json
                 else

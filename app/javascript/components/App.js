@@ -48,8 +48,8 @@ console.log(fetchedBlogs[0])
 <br/>
 <br/>
 		<NavLink className='links' to='/'>Home</NavLink>
-        <NavLink className='links' to='/newblog'>Post a Blog</NavLink>
-        <NavLink className='links' to= {`/${fetchedBlogs.reverse()[0].attributes.slug}`}    >Newest Blog</NavLink>
+        <NavLink className='links' to='/feedback'>Feedback</NavLink>
+        <NavLink className='links' to= {`/${fetchedBlogs.reverse()[1].attributes.slug}`}    >Newest Blog</NavLink>
 
 <br/>
 <div className="helper">
@@ -59,7 +59,7 @@ console.log(fetchedBlogs[0])
 <Routes >
 
             <Route exact path="/"  element={  fetchedBlogs.reverse().map((fetchedBlog)=> {return (       <Blogs key={fetchedBlog.id} slugHandler={slugHandler}  fetchedBlog={fetchedBlog}  /> )}  ) }  />
-		    <Route exact path="/newblog" element={   <NewBlog />  }/>
+		    {/* <Route exact path="/newblog" element={   <NewBlog />  }/> */}
 		    <Route exact path="/:id"  element={< Blog sluger={sluger}  /> }/>
           
     

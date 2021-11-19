@@ -49,7 +49,7 @@ axios.post(`/api/v1/comments`, {...comments,blog_id })
 <input     name="comment_name"  placeholder=' Name' value={CommentData.comment_name}  onChange={handleChange}  type="text" ></input>
 <br/>
 <label  >Comment:</label>
-<input     name="comment_title"  placeholder=' Name' value={CommentData.comment_title}  onChange={handleChange}  type="text" ></input>
+<textarea     name="comment_title"  placeholder=' Name' value={CommentData.comment_title}  onChange={handleChange}  type="text" ></textarea>
 <button type="submit" >Submit</button>
         </form>
     )
