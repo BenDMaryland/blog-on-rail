@@ -38,7 +38,7 @@ console.log(fetchedBlog.included)
           <br/>
           <h2>{fetchedBlog.data.attributes.blog_title} </h2>  
           {/* <img   src={fetchedBlog.data.attributes.image_url}     />  */}
-          <p>{fetchedBlog.data.attributes.blog_post}</p>
+          <p className="blog"  >{fetchedBlog.data.attributes.blog_post}</p>
           <CommentAdd fetchedBlog={fetchedBlog} />
          {       fetchedBlog.included.map ( (comment)=> {  return      <Comments key={comment.id} comment={comment} />  }  )        }
         </BlogCard>
@@ -50,19 +50,19 @@ export default Blog
 const BlogCard= styled.div `
 
 
-p{
-  left: 350px;
-  right: 350px;
-  position: relative;
-  text-align:left;
-  line-height: 32px;
-	white-space: pre-wrap;
-  letter-spacing: -0.003em;
-  font-family: 'Roboto', sans-serif;
-}
 
-img{
 
+.blog{
+
+
+    	left: 350px;
+    	right: 350px;
+    	position: relative;
+    	text-align:left;
+    	line-height: 32px;
+    	  white-space: pre-wrap;
+    	letter-spacing: -0.003em;
+    	font-family: 'Roboto', sans-serif;
 
 }
 
