@@ -17,7 +17,7 @@ module Api
             def create 
                 blog = Blog.new(blog_params)
                 
-                
+                byebug
                 
                 if blog.save
                     render json: BlogSerializer.new(blog).serialized_json
@@ -50,7 +50,7 @@ module Api
             private
 
             def blog_params
-                params.require(:blog).permit(:blog_posts, :blog_title, :image_url)
+                params.require(:blog).permit(:blog_post, :blog_title, :image_url)
             end
 
             def options 

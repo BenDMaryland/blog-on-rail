@@ -8,6 +8,7 @@ import SideBar from './SideBar';
 import styled from 'styled-components'
 import RightBar from './RightBar';
 import "./app.css";
+import NewBlog from './NewBlog';
 
 
 
@@ -52,7 +53,7 @@ console.log(fetchedBlogs[0])
 		<NavLink className='links' to='/'>Home</NavLink>
         <NavLink className='links' to='/feedback'>Feedback</NavLink>
         <NavLink className='links' to= {`/${fetchedBlogs.reverse()[1].attributes.slug}`}    >Newest Blog</NavLink>
-
+		<NavLink className='links' to= {`/newblog`}    >New Blog</NavLink>
 <br/>
 <div className="container">
 
@@ -63,7 +64,7 @@ console.log(fetchedBlogs[0])
             <Route exact path="/"  element={  fetchedBlogs.reverse().map((fetchedBlog)=> {return (       <Blogs key={fetchedBlog.id} slugHandler={slugHandler}  fetchedBlog={fetchedBlog}  /> )}  ) }  />
 		    {/* <Route exact path="/newblog" element={   <NewBlog />  }/> */}
 		    <Route exact path="/:id"  element={< Blog sluger={sluger}  /> }/>
-          
+			<Route exact path="/newblog"  element={< NewBlog sluger={sluger}  /> }/>
     
         </Routes >
         </div >
