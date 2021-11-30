@@ -311,6 +311,7 @@ main{
 }
 
 .rightbar {
+	display: none;
 	height: 50%;
 	width: 10%;
 	position: fixed;
