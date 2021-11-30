@@ -10,23 +10,14 @@ module Api
             end
 
             def show 
-                puts "_______________________________________________________________________________________________________________"
-                puts "_______________________________________________________________________________________________________________"
-                puts "_______________________________________________________________________________________________________________"
                 blog = Blog.find_by_slug( params[:id])
-                puts ""
-                puts ""
-                puts "_______________________________________________________________________________________________________________"
-                puts params[:slug]
-                puts params[:id]
-                puts "______________________________"
                 render json: BlogSerializer.new(blog, options).serialized_json
             end
 
             def create 
                 blog = Blog.new(blog_params)
                 
-                binding.pry
+                
                 
                 if blog.save
                     render json: BlogSerializer.new(blog).serialized_json

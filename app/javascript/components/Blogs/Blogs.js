@@ -1,27 +1,51 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
-function Blogs({slugHandler,fetchedBlog:{id,attributes:{blog_title,blog_post,image_url,slug},relationships}}) {
-// console.log(id,blog_title,image_url,slug,relationships)
+function Blogs({ slugHandler, fetchedBlog: { id, attributes: { blog_title, blog_post, image_url, slug }, relationships } }) {
+    // console.log(id,blog_title,image_url,slug,relationships)
 
 
-if(!slug) return <h1>sssss</h1>
+    if (!slug) return <h1>sssss</h1>
     return (
 
 
 
-        <Link onClick={()=>slugHandler(slug)} to={ {         pathname:    `/${slug}`     } }>
-        <div     >
-            <h1 >{blog_title}</h1>
-            <img src={image_url}  ></img>
-           
-          
-        </div>
-        </Link>
+            <div className="card"   >
+
+                <figure className="card__thumb">
+                    <img className="card__image" src="https://source.unsplash.com/qXMpNtNp1uE/300x510"  ></img>
+                    <figcaption className="card__caption">
+                        <h2 className="card__title">{blog_title}</h2>
+                        <p className="card__snippet"> {blog_post.slice(0, 200)}...  </p>
+                        <Link onClick={() => slugHandler(slug)} to={{ pathname: `/${slug}` }} className="card__button">Read more</Link>
+                    </figcaption>
+                </figure>
+            </div>
+
+  
     )
 }
 
-export default Blogs
+
+
+
+    export default Blogs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // {
