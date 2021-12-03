@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 function Blogs({ slugHandler, fetchedBlog: { id, attributes: { blog_title, blog_post, image_url, slug }, relationships } }) {
-
+console.log("hi")
 
     if (!slug) return <></>
     return (

@@ -21,7 +21,7 @@ axios.get(`/api/v1/${location.pathname}`)
 }, [])
 
 
-if (!fetchedBlog) return <h1>fffffffffffffffff</h1>
+if (!fetchedBlog) return <h1>Loading</h1>
 
     return (
         <BlogCard>
