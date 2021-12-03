@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 function Blogs({ slugHandler, fetchedBlog: { id, attributes: { blog_title, blog_post, image_url, slug }, relationships } }) {
-    // console.log(id,blog_title,image_url,slug,relationships)
 
 
-    if (!slug) return <h1>sssss</h1>
+    if (!slug) return <></>
     return (
 
 
@@ -14,11 +13,11 @@ function Blogs({ slugHandler, fetchedBlog: { id, attributes: { blog_title, blog_
             <div className="card"   >
 
                 <figure className="card__thumb">
-                    <img className="card__image" src="https://source.unsplash.com/qXMpNtNp1uE/300x510"  ></img>
+                    <img className="card__image" src={image_url}></img>
                     <figcaption className="card__caption">
                         <h2 className="card__title">{blog_title}</h2>
                         <p className="card__snippet"> {blog_post.slice(0, 200)}...  </p>
-                        <Link onClick={() => slugHandler(slug)} to={{ pathname: `/${slug}` }} className="card__button">Read more</Link>
+                        <Link onClick={() => slugHandler(slug)} to={{ pathname: `/blogs/${slug}` }} className="card__button">Read more</Link>
                     </figcaption>
                 </figure>
             </div>

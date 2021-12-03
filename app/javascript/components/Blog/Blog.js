@@ -9,26 +9,19 @@ function Blog() {
 
   const [fetchedBlog, setfetchedBlog] = useState()
   let location = useLocation();
-
-  console.log(location)
-
-
-
-
+  console.log(location.pathname)
 
  useEffect(() => {
 
  fetch 
 
-axios.get(`api/v1/blogs/${location.pathname}`)
+axios.get(`/api/v1/${location.pathname}`)
 .then(r=>setfetchedBlog(r.data) )
 .catch(r=>console.log(r))
 }, [])
 
 
 if (!fetchedBlog) return <h1>fffffffffffffffff</h1>
-console.log(fetchedBlog.included)
-
 
     return (
         <BlogCard>

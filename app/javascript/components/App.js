@@ -1,5 +1,5 @@
-import React,{useState,useEffect} from 'react'
-import { NavLink, Route, Routes   } from "react-router-dom";
+import React, { useState, useEffect } from 'react'
+import { NavLink, Route, Routes } from "react-router-dom";
 import Blog from './Blog/Blog'
 import Blogs from './Blogs/Blogs'
 import axios, { Axios } from 'axios'
@@ -9,73 +9,84 @@ import styled from 'styled-components'
 import RightBar from './RightBar';
 import "./app.css";
 import NewBlog from './NewBlog';
-
+import Home from './Home';
 
 
 function App() {
-  const [fetchedBlogs, setfetchedBlogs] = useState([])
-const [sluger, setsluger] = useState()
-
-
-console.log(Array(16).join ("wat"-1) +" Batman!")
-    useEffect(() => {
-  fetch 
-
-    axios.get("api/v1/blogs.json")
-    .then(r=>setfetchedBlogs(r.data.data) )
-    .catch(r=>console.log(r))
-    }, [fetchedBlogs.length])
-
-
-  function slugHandler(slug){
-    setsluger(slug)
- console.log(slug)
-
-  }
+	const [fetchedBlogs, setfetchedBlogs] = useState([])
+	const [sluger, setsluger] = useState()
 
 
 
-    if (fetchedBlogs.length ===0) return <h1>loabding</h1>
-console.log(fetchedBlogs[0])
-    return (
-      <Hope className="hope">
-        
+	useEffect(() => {
+		fetch
 
-        <SideBar />
-		<RightBar />
-<main>
-<br/>
-<br/>
-<br/>
-<Header className="header" style={{"text-align":"center"  }}   /> 
-<br/>
-<br/>
-		<NavLink className='links' to='/'>Home</NavLink>
-        <NavLink className='links' to='/feedback'>Feedback</NavLink>
-        <NavLink className='links' to= {`/${fetchedBlogs.reverse()[1].attributes.slug}`}    >Newest Blog</NavLink>
-		<NavLink className='links' to= {`/newblog`}    >New Blog</NavLink>
-<br/>
-<div className="container">
+		axios.get("/api/v1/blogs.json")
+			.then(r => setfetchedBlogs(r.data.data))
+			.catch(r => console.log(r))
+	}, [fetchedBlogs.length])
+
+	
+
+	function slugHandler(slug) {
+		setsluger(slug)
+		
+
+	}
 
 
 
-<Routes >
+	if (fetchedBlogs.length === 0) return <h1>loading</h1>
+	return (
 
-            <Route exact path="/"  element={  fetchedBlogs.reverse().map((fetchedBlog)=> {return (       <Blogs key={fetchedBlog.id} slugHandler={slugHandler}  fetchedBlog={fetchedBlog}  /> )}  ) }  />
-		    {/* <Route exact path="/newblog" element={   <NewBlog />  }/> */}
-		    <Route exact path="/:id"  element={< Blog sluger={sluger}  /> }/>
-			<Route exact path="/newblog"  element={< NewBlog sluger={sluger}  /> }/>
-    
-        </Routes >
-        </div >
-        </main>
-        </Hope>
-    )
+
+
+
+		
+		<Hope className="hope">
+
+
+			<SideBar />
+			<RightBar />
+			<main>
+				<br />
+				<br />
+				<br />
+				<Header className="header" style={{ "text-align": "center" }} />
+				<br />
+				<br />
+				<NavLink className='links' to='/'>Home</NavLink>
+				<NavLink className='links' to='/blog'>Blog</NavLink>
+				<NavLink className='links' to='/blogs/feedback'>Feedback</NavLink>
+				<NavLink className='links' to={`/blogs/${fetchedBlogs.reverse()[1].attributes.slug}`}    >Newest Blog</NavLink>
+				<NavLink className='links' to=  {`/newblog`}    >New Blog</NavLink>
+				<br />
+				<div className="container">
+
+
+
+					<Routes >
+
+						<Route exact path="/blog" element={fetchedBlogs.reverse().map((fetchedBlog) => { return (<Blogs key={fetchedBlog.id} slugHandler={slugHandler} fetchedBlog={fetchedBlog} />) })} />
+						{/* <Route exact path="/newblog" element={   <NewBlog />  }/> */}
+						<Route exact path="/blogs/:id" element={< Blog sluger={sluger} />} />
+						<Route exact path="/" element={< Home  />} />
+						<Route exact path="/newblog" element={< NewBlog sluger={sluger} />} />
+
+					</Routes >
+				</div >
+			</main>
+		</Hope>
+
+
+
+	
+	)
 }
 
 export default App
 
-const Hope= styled.div`
+const Hope = styled.div`
 @color-1st: #ffea92;
 @color-2nd: #5bc995;
 
