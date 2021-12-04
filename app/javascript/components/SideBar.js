@@ -6,7 +6,10 @@ function SideBar() {
       <SideBar>
         <nav className="sidebar" tabIndex="0">
       <header >
-            <img className="avatar"   style={{ "width": "50px"}} src="https://media-exp1.licdn.com/dms/image/C4D03AQG4xO_PFmycLQ/profile-displayphoto-shrink_400_400/0/1633307960580?e=1642636800&v=beta&t=E7xycAspu2nDDUHEsrJGqVQN7ES_bS9Kf3EdJgST1Gc" />
+            
+          <img className="avatar"   src="https://media-exp1.licdn.com/dms/image/C4D03AQG4xO_PFmycLQ/profile-displayphoto-shrink_400_400/0/1633307960580?e=1642636800&v=beta&t=E7xycAspu2nDDUHEsrJGqVQN7ES_bS9Kf3EdJgST1Gc" />
+            <br />
+            <br />
             <h4 className="name" style={{"color": "white"}} >Ben Darago</h4>
             <p className="title" style={{ "color": "white" }} >Full Stack Developer</p>
       </header>
@@ -57,7 +60,8 @@ text-align:right;
   display: inline-flex;
 }
 .avatar{
-  position: absolute;
+  width:50px;
+ 
   left:10px;
 display:flex;
 
