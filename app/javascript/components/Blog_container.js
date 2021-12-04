@@ -7,7 +7,7 @@ import Header from './Header';
 import SideBar from './SideBar';
 import styled from 'styled-components'
 
-import "./app.css";
+
 import NewBlog from './NewBlog';
 
 
@@ -85,26 +85,12 @@ export default BlogContainer
 const Hope = styled.div`
 
 
-// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap");
-
-
-@mixin breakpoint($point) {
-  @if $point == desktop {
-    @media (min-width: $desktop) {
-      @content;
-		}
-	}
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+    main{
+    text-align: center;
+	position:inher;
+    width: 94%;
+	margin-left: 10%;
+    background-color: #f5fafa;
 }
 
 body {
@@ -114,7 +100,7 @@ body {
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	 background-color: #f5fafa;
+	background-color: #f5fafa;
 }
 
 .container {
@@ -158,6 +144,10 @@ body {
 	&__thumb {
 		position: relative;
 		height: 500px;
+		overflow: hidden;
+		    margin-left: 0;
+    margin-right: 0;
+
 		width: 100%;
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);		
 		@include breakpoint(desktop) {
@@ -192,11 +182,6 @@ body {
 		text-align: center;
 		transition: .3s;
 		width: 250px;
-
-		@include breakpoint(desktop) {
-			top: calc(100% - 110px);
-			transform: unset;
-		}
 	}
 
 	&__title {
@@ -249,10 +234,6 @@ body {
 }
 
 
-main{
-  text-align: center;
-    background-color: #f5fafa;
-}
 
  a {
   padding: 6px 8px 6px 16px;

@@ -33,8 +33,6 @@ export default SideBar
 
 
 SideBar = styled.div `
-// @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
-// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap");
 
   .sidebar {
   height: 100%;

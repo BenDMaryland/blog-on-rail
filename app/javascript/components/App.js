@@ -67,6 +67,8 @@ text-align: center;
 
     main{
     text-align: center;
+     width: 90%;
+     right:90%
     background - color: #f5fafa;
 }
 }`
