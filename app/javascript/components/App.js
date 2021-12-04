@@ -24,7 +24,7 @@ function App() {
 export default App
  const MainBody = styled.div`
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap");
 
 
 @mixin breakpoint($point) {
