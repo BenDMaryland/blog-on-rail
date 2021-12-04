@@ -6,7 +6,7 @@ import axios, { Axios } from 'axios'
 import Header from './Header';
 import SideBar from './SideBar';
 import styled from 'styled-components'
-import RightBar from './RightBar';
+
 import "./app.css";
 import NewBlog from './NewBlog';
 
@@ -15,7 +15,7 @@ function BlogContainer() {
 	const [fetchedBlogs, setfetchedBlogs] = useState([])
 	const [sluger, setsluger] = useState()
 
-console.log("ddddd")
+	console.log("ddddd")
 
 	useEffect(() => {
 		fetch
@@ -34,7 +34,7 @@ console.log("ddddd")
 	}
 
 
-console.log(fetchedBlogs)
+	console.log(fetchedBlogs)
 	if (fetchedBlogs.length === 0) return <h1>loading</h1>
 	return (
 
@@ -46,7 +46,6 @@ console.log(fetchedBlogs)
 
 
 			<SideBar />
-			<RightBar />
 			<main>
 				<br />
 				<br />
@@ -84,21 +83,10 @@ console.log(fetchedBlogs)
 export default BlogContainer
 
 const Hope = styled.div`
-@color-1st: #ffea92;
-@color-2nd: #5bc995;
 
-@menu-width-desktop: 240px;
-@menu-width-tablet: 90px;
-@menu-width-smartphone: 230px;
-
-@icon-url-base: "http://www.entypo.com/images/";
-@icon-url-dashboard: "@{icon-url-base}/gauge.svg";
-@icon-url-customers: "@{icon-url-base}/briefcase.svg";
-@icon-url-users: "@{icon-url-base}/users.svg";
-@icon-url-settings: "@{icon-url-base}/tools.svg";
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap");
-$desktop: 1024px;
+
 
 @mixin breakpoint($point) {
   @if $point == desktop {
@@ -120,12 +108,13 @@ html {
 }
 
 body {
+	background-image: url(../javascript/assets/images/overlay.png);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	background-color: #e6e6e6;
+	 background-color: #f5fafa;
 }
 
 .container {
@@ -139,7 +128,7 @@ body {
 .card {
 	width: 300px;
 	margin: 10px;
-	background-color: white;
+	  background-color: #f5fafa;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -148,19 +137,10 @@ body {
 		.card__caption {
 			top: 50%;
 			transform: translateY(-50%);
-	
 		}
-
-
-
-
-
-
 		.card__image {
 			transform: translateY(-10px);
-
 		}
-
 		.card__thumb {
 			display: flex;
 	justify-content: center;
@@ -171,23 +151,17 @@ body {
 				background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255 ,255 , 0) 100%);
 			}
 		}
-
 		.card__snippet {
 			margin: 20px 0;
 		}
 	}
-
 	&__thumb {
 		position: relative;
 		height: 500px;
 		width: 100%;
-		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-	
-		
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);		
 		@include breakpoint(desktop) {
-			max-height: 500px;
-		}
-
+			max-height: 500px;		}
 		&::after {
 			position: absolute;
 			top: 0;
@@ -195,9 +169,7 @@ body {
 			content: '';
 			width: 100%;
 			height: 100%;
-			
-			transition: .3s;
-			
+			transition: .3s;		
 			@include breakpoint(desktop) {
 				top: calc(100% - 140px);
 			}
@@ -272,29 +244,15 @@ body {
 		&:hover {
 			
 			color: black;
-			background-color: white;
 		}
 	}
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 main{
   text-align: center;
-	
+    background-color: #f5fafa;
 }
-
 
  a {
   padding: 6px 8px 6px 16px;
@@ -304,35 +262,6 @@ main{
   display: block;
 }
 
-
-
-.sidebar {
-  height: 100%;
-  width: 10%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 16px;
-}
-
-.rightbar {
-	display: none;
-	height: 50%;
-	width: 10%;
-	position: fixed;
-	z-index: 1;
-	top: 20;
-	border-radius: 25px;
-	right: 0;
-	color: white;
-	text-align: center;
-	background-color: rgb(32, 33, 36);
-	overflow-x: hidden;
-	padding-top: 16px;
-  }
 
 .hope{
 	top:100;
