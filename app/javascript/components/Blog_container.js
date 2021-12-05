@@ -131,10 +131,11 @@ body {
 			display: flex;
 	justify-content: center;
 	align-items: center;
+	background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255 ,255 , 0) 100%);
 
 			&::after {
 				top: 0;
-				background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255 ,255 , 0) 100%);
+				
 			}
 		}
 		.card__snippet {
@@ -175,6 +176,7 @@ body {
 	&__caption {
 		position: absolute;
 		top: 110%;
+		
 		z-index: 1;
 		padding: 0 20px;
 		color: white;

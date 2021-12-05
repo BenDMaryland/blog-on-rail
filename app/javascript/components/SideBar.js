@@ -19,10 +19,10 @@ function SideBar() {
         <br/>
             <a href="https://github.com/BenDMaryland" tabIndex="0" className="icon-dashboard"><span><i id="git" className="fab fa-github"></i>                          GitHub</span></a>
         <br/>
-            <a href="https://a-blog-on-rails.herokuapp.com/" tabIndex="0" className="icon-dashboard"><span> <i className="fas fa-blog"></i> Blog</span></a>
+            <a href="https://a-blog-on-rails.herokuapp.com/blogs" tabIndex="0" className="icon-dashboard"><span> <i className="fas fa-blog"></i> Blog</span></a>
         <br/>
          
-            <a href="https://github.com/BenDMaryland/Final-projectv-v.2" tabIndex="0" className="icon-dashboard"><span><i className="fab fa-twitter"></i> Twitter</span></a>
+            <a href="https://twitter.com/BenjaminDarago" tabIndex="0" className="icon-dashboard"><span><i className="fab fa-twitter"></i> Twitter</span></a>
       </div>
     </nav>
    </SideBar>
