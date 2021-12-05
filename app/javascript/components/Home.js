@@ -11,7 +11,7 @@ function Home() {
 
 
             <div className="mainbody">
-            <h1 className="name">Name</h1>
+            <h1 className="name">Ben Darago</h1>
             <h4 className="bio" >Bio</h4>
             <Portfolio />
             <Resume />

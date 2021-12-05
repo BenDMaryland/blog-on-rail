@@ -1,10 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 function Resume() {
+
+
+
+
+
+
+
     return (
         <ResumePage>
-            <div  className="header">
+            <div className="header">
                 <br />
                 <h1> Resume </h1>
                 <h2 className="name"> Ben Darago</h2>
@@ -26,35 +34,59 @@ function Resume() {
 
             <div className="technologies" >
                 <h2> Technologies </h2>
-                <li>
-                    <ul> React.js </ul> <div> 7/10</div>
-                    <ul> JavaScript </ul> <div> 5/10</div>
-                    <ul> Ruby </ul> <div> 5/10</div>
-                    <ul> Rails </ul> <div> 7/10</div>
-                    <ul> node.js </ul> <div> 4/10</div>
-                    <ul> Python </ul> <div> 3/10</div>
-                    <ul> TypeScript </ul> <div> 6/10</div>
-                </li>
+
+                <p className="tech">React </p>
+                <div className="bar_container">
+                    <div className="skills react">90%</div>
+                </div>
+
+                <p>JavaScript </p>
+                <div className="bar_container">
+                    <div className="skills js">70%</div>
+                </div>
+
+                <p>Rails</p>
+                <div className="bar_container">
+                    <div className="skills rails">65%</div>
+                </div>
+
+                <p>Ruby</p>
+                <div className="bar_container">
+                    <div className="skills ruby">60%</div>
+                </div>
+
+                <p>HTML/CSS</p>
+                <div className="bar_container">
+                    <div className="skills html">65%</div>
+                </div>
+
+                <p>Typescript</p>
+                <div className="bar_container">
+                    <div className="skills typescript">30%</div>
+                </div>
+
+
+
             </div>
 
-            <div className="Skills" >
+            <div className="softSkills" >
                 <h2> Skills  </h2>
-                <li>
-                    <ul> Troubleshooting </ul>
-                    <ul> Working with teams (word this better) </ul>
-                    <ul> Flexable </ul>
-                    <ul> Drive </ul>
-                </li>
+                <div>
+                    <div> Troubleshooting </div>
+                    <div> Working with teams (word this better) </div>
+                    <div> Flexable </div>
+                    <div> Drive </div>
+                </div>
             </div>
 
-            <div className="exp">
+            <div className="edu">
                 <h2>Education</h2>
                 <h3>Flation School</h3>
                 <p>A leading Bootcamp, where my career coach told me what to put here   </p>
 
-                </div>
+            </div>
 
-            <div className="edu"> 
+            <div className="exp">
                 <h2>Experince</h2>
                 <h3>Ledios: Tier 2 IT support </h3>
                 <p>A did good as a tier two technian where i learned to manage my own projects work as a team and troubleshoot a wide variety of issues. </p>
@@ -66,8 +98,11 @@ function Resume() {
 export default Resume
 
 const ResumePage = styled.div`
-background-color: antiquewhite;
+* {box-sizing:border-box}
+background-color: whitesmoke;
 width: 100%;
+
+
 .header{
 text-align: center;
 }
@@ -83,21 +118,54 @@ display: flex;
 
 }
 
-.technologies{
-text-align: left;
-display: flex;
-}
 
-.exp{
-text-align: center;
-display: flex;
-
-}
 .edu{
 text-align: center;
-display: flex;
+margin-bottom: 100px;
+
+
+}
+.exp{
+text-align: center;
+margin-bottom: 100px;
 
 }
 
+.technologies{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 0px;
+    float: left;
+}
+
+.softSkills{
+margin-bottom: 100px;
+
+;
+}
+
+
+.bar_container{
+  width: 100%; 
+  background-color: #ddd; 
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  padding-right: 10px;
+  color: white; 
+}
+
+.react {width: 90%; background-color: #04AA6D;} 
+.js {width: 70%; background-color: #2196F3;} 
+.rails {width: 65%; background-color: #f44336;} 
+.ruby  {width: 60%; background-color: #808080;} 
+.html {width: 65%; background-color: #f44336;}
+.typescript  {width: 30%; background-color: #808080;}
 
 `
