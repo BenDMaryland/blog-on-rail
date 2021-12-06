@@ -94,7 +94,7 @@ const Hope = styled.div`
 }
 
 body {
-	background-image: url(../javascript/assets/images/overlay.png);
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -12,17 +12,19 @@ function Resume() {
 
     return (
         <ResumePage id="resume" >
+            <h1 style={{"text-align":"center"}}> Resume </h1>
             <div className="header">
                 <br />
-                <h1> Resume </h1>
+                
                 <h2 className="name"> Ben Darago</h2>
                 <h3>Fullstack Web Developer </h3>
             </div>
             <img id="resume_pic" src={headshot} />
             <div className="bio">
+                <h2>Bio </h2>
                 <p>  Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team.  Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. </p>
             </div>
-           
+
 
             <div className="contacts">
                 <a  ><i className="fas fa-mobile"></i><span> 443-546-6043</span></a>
@@ -106,6 +108,15 @@ width: 100%;
 
 .header{
 text-align: center;
+float: left;
+padding-left: auto;
+padding-right: auto;
+margin-left: 30px ;
+}
+.bio{
+    padding-left: auto;
+padding-right: auto;
+margin-left: 30px ;
 }
 
 
@@ -113,7 +124,7 @@ text-align: center;
 .skills{
 text-align: right;
 display: flex;
-
+padding-left: 10px;
 }
 
 
@@ -160,15 +171,16 @@ text-align: center;
   color: white; 
 }
 
-.react {width: 90%; background-color: #04AA6D;} 
-.js {width: 70%; background-color: #2196F3;} 
-.rails {width: 65%; background-color: #f44336;} 
-.ruby  {width: 60%; background-color: #808080;} 
-.html {width: 65%; background-color: #f44336;}
-.typescript  {width: 30%; background-color: #808080;}
+.react {width: 90%; background-color: #b26baf;}
+.js {width: 70%; background-color: #964e98;}
+.rails {width: 65%; background-color: #c093eb;}
+.ruby  {width: 60%; background-color: #634173;}
+.html {width: 65%; background-color: #421c58;}
+.typescript  {width: 30%; background-color: #8c4e9c;}
 
 #resume_pic{
-width: 500px;
+width: 200px;
+margin: auto;
 
 }
 .contacts{
@@ -177,5 +189,13 @@ width: 500px;
     width: fit-content;
     display: flex;
     text-align: center;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+
+font-family: 'Roboto', sans-serif;
 }
 `

@@ -23,7 +23,7 @@ padding: 0ch;
 h1{
 
     margin: 0px;
-    padding-top: 200px;
+    padding-top: 40vh;
     padding-left: 50px;
 }
 

@@ -13,8 +13,8 @@ function Footer() {
             </div>
 
             <div className="links">
-                
-                <a className="footer_links"  href="mailto: ben.d.maryland@gmail.com"  ><i className="fas fa-envelope"></i></a>
+
+                <a className="footer_links" href="mailto: ben.d.maryland@gmail.com"  ><i className="fas fa-envelope"></i></a>
                 <a className="footer_links" href="https://www.linkedin.com/in/ben-darago/"  ><i className="fab fa-linkedin"></i></a>
                 <a className="footer_links" href="https://github.com/BenDMaryland"  ><i id="git" className="fab fa-github"></i></a>
                 <a className="footer_links" href="https://a-blog-on-rails.herokuapp.com/blogs" ><i className="fas fa-blog"></i></a>
@@ -27,7 +27,7 @@ function Footer() {
                 <br />
                 <p className="bar">____</p>
                 <br />
-                
+
             </div>
 
         </Foot>
@@ -37,19 +37,23 @@ function Footer() {
 export default Footer
 
 const Foot = styled.footer`
-background-color: #7510f7;
+background-color: #b26baf;
 text-align: center;
 bottom: 50px;
 width: auto;
 padding: 0%;
+color: white;
+
 
 .links{
 display: inline-flex;
 text-align: center;
+color: white;
 }
 .footer_links{
 border-radius: 60px/60px;
 border: solid;
+color: white;
 text-align: center;
 padding:8px 10px 8px 10px;
 margin: 15px;

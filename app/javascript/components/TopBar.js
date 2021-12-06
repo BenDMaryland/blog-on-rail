@@ -6,10 +6,10 @@ import styled from 'styled-components';
 function TopBar() {
     return (
         <Top>
-            
+
             <Link className="toplink" to="/#intro">Intro</Link>
-            <Link className="toplink"to="/#portfolio">Portfoliot</Link>
-            <Link className="toplink"to="/#resume">Resume</Link>
+            <Link className="toplink" to="/#portfolio">Portfoliot</Link>
+            <Link className="toplink" to="/#resume">Resume</Link>
         </Top>
     )
 }
@@ -30,6 +30,12 @@ padding: 0%;
 .toplink{
 display: inline-flex;
 text-align: center;
+}
+a:hover{
+    background-color: #1a1a1a;
+    color:  #c093eb;
+    
+
 }
 
 

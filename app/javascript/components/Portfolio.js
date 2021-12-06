@@ -64,8 +64,9 @@ padding-bottom: 40px;
 }
 
 .project{
+    text-align: center;
     background-color: #f5f6f7;
-    
+    display:grid;
     width: 70%;
 }
 
@@ -87,7 +88,14 @@ height: 300px;
   display: block;
 
 }
-
+a{
+    align-content:center;
+    width: auto;
+   margin: auto;
+}
+a:hover{
+    background-color: #eaecec;
+}
 
 .link{
 
