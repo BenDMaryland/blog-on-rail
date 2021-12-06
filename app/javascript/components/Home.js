@@ -5,19 +5,19 @@ import styled from 'styled-components';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Footer from './Footer';
+import TopBar from "./TopBar"
+import Intro
+
+from './Intro';
 function Home() {
     return (
-        <Portfol>
-
-
-            <div className="mainbody">
-            <h1 className="name">Ben Darago</h1>
-            <h4 className="bio" >Bio</h4>
+        <>
+            <TopBar />
+            <Intro />
             <Portfolio />
-            <Resume />
+            <Resume/>
             <Footer />
-            </div>
-        </Portfol>
+        </>
 
 
     )
@@ -25,11 +25,8 @@ function Home() {
 
 export default Home
 
-const Portfol = styled.div`
+// const Portfol = styled.div`
 
-.mainbody{
-position: inherit;
+//  background-color: #f5fafa;
 
-}
-
-`
+// `

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import headshot from "../assets/images/Headshot.png"
 
 function Resume() {
 
@@ -11,17 +11,18 @@ function Resume() {
 
 
     return (
-        <ResumePage>
+        <ResumePage id="resume" >
             <div className="header">
                 <br />
                 <h1> Resume </h1>
                 <h2 className="name"> Ben Darago</h2>
                 <h3>Fullstack Web Developer </h3>
             </div>
-
+            <img id="resume_pic" src={headshot} />
             <div className="bio">
-                <p> Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team.   </p>
+                <p>  Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team.  Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. </p>
             </div>
+           
 
             <div className="contacts">
                 <a  ><i className="fas fa-mobile"></i><span> 443-546-6043</span></a>
@@ -107,10 +108,7 @@ width: 100%;
 text-align: center;
 }
 
-.contacts{
-    display: flex;
-    text-align: center;
-}
+
 
 .skills{
 text-align: right;
@@ -143,6 +141,7 @@ margin-bottom: 100px;
 
 .softSkills{
 margin-bottom: 100px;
+text-align: center;
 
 ;
 }
@@ -168,4 +167,15 @@ margin-bottom: 100px;
 .html {width: 65%; background-color: #f44336;}
 .typescript  {width: 30%; background-color: #808080;}
 
+#resume_pic{
+width: 500px;
+
+}
+.contacts{
+    flex: auto;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    text-align: center;
+}
 `

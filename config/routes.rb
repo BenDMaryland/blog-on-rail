@@ -12,6 +12,5 @@ namespace :api  do
  end
 
 
-
 get '*path', to: 'pages#index', via: :all
 end
