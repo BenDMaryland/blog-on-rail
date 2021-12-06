@@ -31,10 +31,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
   background-color: #eaecec;
 
 
-a:hover{
-       color: #c093eb ;
-    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255 ,255 , 0) 100%);;
-}
+
 
 
  `

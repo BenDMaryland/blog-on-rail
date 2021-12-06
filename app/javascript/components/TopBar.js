@@ -8,7 +8,7 @@ function TopBar() {
         <Top>
 
             <Link className="toplink" to="/#intro">Intro</Link>
-            <Link className="toplink" to="/#portfolio">Portfoliot</Link>
+            <Link className="toplink" to="/#portfolio">Portfolio</Link>
             <Link className="toplink" to="/#resume">Resume</Link>
         </Top>
     )
@@ -24,8 +24,12 @@ const Top = styled.div`
 background-color: #202020;
 text-align: center;
 bottom: 50px;
-width: auto;
+width: 100%;
 padding: 0%;
+position: fixed;
+z-index: 2;
+top: 0em;
+bottom:auto;
 
 .toplink{
 display: inline-flex;

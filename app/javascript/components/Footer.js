@@ -24,7 +24,7 @@ function Footer() {
 
             <div>
                 <br />
-                <br />
+               
                 <p className="bar">____</p>
                 <br />
 
@@ -43,8 +43,9 @@ bottom: 50px;
 width: auto;
 padding: 0%;
 color: white;
-
-
+z-index: 2;
+ position: relative;
+bottom: 0px;
 .links{
 display: inline-flex;
 text-align: center;
@@ -68,6 +69,9 @@ p{
    
     width: 100%;
 }
-
+a:hover{
+       color: #c093eb ;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255 ,255 , 0) 100%);;
+}
 
 `

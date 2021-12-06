@@ -76,7 +76,7 @@ text-align: right;
 }
 
 .profile_image{
-width: 500px;
+width: 30%;
 height: 300px;
 }
 

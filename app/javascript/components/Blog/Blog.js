@@ -43,13 +43,18 @@ export default Blog
 const BlogCard= styled.div `
 
 
+  overflow: inherit;
+    	left: 20%;
+    	right: 40%;
 
-
+max-width: 80%;
 .blog{
 
 
-    	left: 350px;
-    	right: 350px;
+  padding-right: 10%;
+  overflow: inherit;
+    	left: 10%;
+    	right: 40%;
     	position: relative;
     	text-align:left;
     	line-height: 32px;

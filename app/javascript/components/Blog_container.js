@@ -9,6 +9,8 @@ import styled from 'styled-components'
 
 
 import NewBlog from './NewBlog';
+import Footer from './Footer';
+import TopBar from './TopBar';
 
 
 function BlogContainer() {
@@ -41,10 +43,10 @@ function BlogContainer() {
 
 
 
-
+<>
 		<Hope className="hope">
 
-
+       
 			<SideBar />
 			<main>
 				<br />
@@ -72,9 +74,10 @@ function BlogContainer() {
 					</Routes >
 				</div >
 			</main>
+			
 		</Hope>
-
-
+<Footer />
+</>
 
 
 	)
@@ -84,13 +87,14 @@ export default BlogContainer
 
 const Hope = styled.div`
 
-
+width: 100%;
     main{
     text-align: center;
 	position:inher;
-    width: 94%;
+    width: 90%;
 	margin-left: 10%;
     background-color: #f5fafa;
+ height: 100%;
 }
 
 body {
@@ -108,7 +112,6 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	margin: 20px 0 80px;
 }
 
 .card {
