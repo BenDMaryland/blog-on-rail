@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function Footer() {
     return (
-        <Foot>
+        <Foot id="footer">
             <br />
             <br />
             <div className="tagline" >

@@ -68,6 +68,7 @@ padding-bottom: 40px;
     background-color: #f5f6f7;
     display:grid;
     width: 70%;
+    height: auto;
 }
 
 #agile{
@@ -77,7 +78,7 @@ text-align: right;
 
 .profile_image{
 width: 30%;
-height: 300px;
+height: auto;
 }
 
 

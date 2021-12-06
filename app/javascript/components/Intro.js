@@ -28,4 +28,12 @@ h1{
     padding-left: 50px;
 }
 
+h2{
+    padding-top: 50px;
+padding-left: 20%;
+padding-right: 20%;
+text-align: center;
+
+}
+
 `

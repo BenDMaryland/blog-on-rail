@@ -10,6 +10,10 @@ function TopBar() {
             <Link className="toplink" to="/#intro">Intro</Link>
             <Link className="toplink" to="/#portfolio">Portfolio</Link>
             <Link className="toplink" to="/#resume">Resume</Link>
+            <Link className="toplink" to="/#footer">Contacts</Link>
+
+
+            
         </Top>
     )
 }
