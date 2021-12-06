@@ -2,20 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import headshot from "../assets/images/Headshot.png"
 
-function Resume() {
+function Resume({ scrollHander }) {
 
-
-
-
-
-
+   
 
     return (
-        <ResumePage id="resume" >
-            <h1 style={{"text-align":"center"}}> Resume </h1>
+        <ResumePage id="resume" onWheel={() => scrollHander("resume")}     >
+            <h1  style={{ "textAlign": "center" }}> Resume </h1>
             <div className="header">
                 <br />
-                
+
                 <h2 className="name"> Ben Darago</h2>
                 <h3>Fullstack Web Developer </h3>
             </div>

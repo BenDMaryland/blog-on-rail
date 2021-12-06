@@ -6,11 +6,13 @@ import blog from "../assets/images/blog.png"
 
 
 
-function Portfolio() {
+function Portfolio({ scrollHander } ) {
+
+
 
 
     return (
-        <Portfol id="portfolio">
+        <Portfol id="portfolio" onWheel={() => scrollHander("portfolio")}  >
             <h1> My projects</h1>
 
             <div className="project_container">

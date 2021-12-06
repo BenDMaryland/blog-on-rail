@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import background from "../assets/images/background.jpg"
-function Intro() {
+function Intro({ scrollHander } ) {
     return (
-        <IntroPage id="intro">
+        <IntroPage id="intro" onWheel={() => scrollHander("intro")}  >
             <h1> Hi I'm Ben, A Fullstack Developer  </h1>
             <h2> Here I talk about myself or somethingHere I talk about myself or somethingHere I talk about myself or somethingHere I talk about myself or somethingHere I talk about myself or somethingHere I talk about myself or somethingHere I talk about myself or somethingHere I talk about myself or something </h2>
         </IntroPage>

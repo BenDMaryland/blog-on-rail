@@ -10,7 +10,7 @@ import "./global.css"
 
 function App() {
     return (
-        <MainBody>
+        <MainBody  >
 
      
           <Routes>
