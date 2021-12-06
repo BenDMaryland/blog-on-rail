@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Footer() {
+function Footer({ scrollHander}) {
     return (
         <Foot id="footer" onWheel={() => scrollHander("footer")}  >
             <br />

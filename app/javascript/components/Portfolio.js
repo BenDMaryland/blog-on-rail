@@ -13,7 +13,7 @@ function Portfolio({ scrollHander } ) {
 
     return (
         <Portfol id="portfolio" onWheel={() => scrollHander("portfolio")}  >
-            <h1> My projects</h1>
+            <h1 id='projects_title' >Here Are Some Of My Projects</h1>
 
             <div className="project_container">
                 <div className="project" id="agile">
@@ -59,18 +59,34 @@ export default Portfolio
 
 const Portfol = styled.div`
 
+padding-bottom: 100px;
 .project_container{
 display: flex;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 padding-bottom: 40px;
+margin-left: 5%;
+margin-right: 5%;
 }
 
 .project{
     text-align: center;
-    background-color: #f5f6f7;
+    background-color: #f5f5f5;
     display:grid;
+   left: auto;
+   right: auto;
     width: 70%;
     height: auto;
+    a{
+     /* position: absolute;
+     left: 50vw;
+     top: auto; */
+
+
+    }
+
+    p{
+width: 95%;
+    }
 }
 
 #agile{
@@ -80,7 +96,10 @@ text-align: right;
 
 .profile_image{
 width: 30%;
+margin-left: 5%;
+margin-right: 5%;
 height: auto;
+  background-color: #f5f5f5;
 }
 
 
@@ -92,7 +111,7 @@ height: auto;
 
 }
 a{
-    align-content:center;
+ 
     width: auto;
    margin: auto;
 }
@@ -104,5 +123,9 @@ a:hover{
 
   display: block;
 }
+#projects_title{
+text-align: center;
+font-family: 'Montserrat', sans-serif;
 
+}
 `

@@ -26,6 +26,8 @@ h1{
     margin: 0px;
     padding-top: 40vh;
     padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 h2{
@@ -33,6 +35,7 @@ h2{
 padding-left: 20%;
 padding-right: 20%;
 text-align: center;
+font-family: 'Montserrat', sans-serif;
 
 }
 

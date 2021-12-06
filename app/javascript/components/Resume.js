@@ -8,7 +8,7 @@ function Resume({ scrollHander }) {
 
     return (
         <ResumePage id="resume" onWheel={() => scrollHander("resume")}     >
-            <h1  style={{ "textAlign": "center" }}> Resume </h1>
+            <h1 id="resume_title" style={{ "textAlign": "center" }}> Here Is My Resume </h1>
             <div className="header">
                 <br />
 
@@ -71,10 +71,10 @@ function Resume({ scrollHander }) {
             <div className="softSkills" >
                 <h2> Skills  </h2>
                 <div>
-                    <div> Troubleshooting </div>
-                    <div> Working with teams (word this better) </div>
-                    <div> Flexable </div>
-                    <div> Drive </div>
+                    <p> Troubleshooting </p>
+                    <p> Working with teams (word this better) </p>
+                    <p> Flexable </p>
+                    <p> Drive </p>
                 </div>
             </div>
 
@@ -100,7 +100,11 @@ const ResumePage = styled.div`
 * {box-sizing:border-box}
 background-color: whitesmoke;
 width: 100%;
+   font-family: 'Montserrat', sans-serif;
+#resume_title{
 
+     font-family: 'Montserrat', sans-serif;
+}
 
 .header{
 text-align: center;
@@ -109,12 +113,28 @@ padding-left: auto;
 padding-right: auto;
 margin-left: 30px ;
 }
+
+#resume_pic{
+    float: left;
+width: 200px;
+margin: auto;
+
+}
 .bio{
     padding-left: auto;
 padding-right: auto;
 margin-left: 30px ;
+padding-bottom: auto;
 }
 
+.contacts{
+    flex: auto;
+    margin: auto;
+    width: fit-content;
+    display: inline-flex;
+    text-align: center;
+    padding-top: 55px;
+}
 
 
 .skills{
@@ -174,18 +194,6 @@ text-align: center;
 .html {width: 65%; background-color: #421c58;}
 .typescript  {width: 30%; background-color: #8c4e9c;}
 
-#resume_pic{
-width: 200px;
-margin: auto;
-
-}
-.contacts{
-    flex: auto;
-    margin: auto;
-    width: fit-content;
-    display: flex;
-    text-align: center;
-}
 p{
     font-family: 'Roboto', sans-serif;
 }
