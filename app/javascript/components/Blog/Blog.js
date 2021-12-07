@@ -13,7 +13,7 @@ function Blog() {
 
  useEffect(() => {
 
- fetch 
+
 
 axios.get(`/api/v1/${location.pathname}`)
 .then(r=>setfetchedBlog(r.data) )

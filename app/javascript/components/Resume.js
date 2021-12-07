@@ -18,7 +18,7 @@ function Resume({ scrollHander }) {
             <img id="resume_pic" src={headshot} />
             <div className="bio">
                 <h2>Bio </h2>
-                <p>  Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team.  Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. Hi I'm a Fullstack webdeveloper who is passonaint about creating new projects and building up the web. I'm a graduatre from Flation School and would love to be a part of your team. </p>
+                <p> Hi here goes my Bio. I will put something here, with buzzwords.  Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. </p>
             </div>
 
 
@@ -73,22 +73,22 @@ function Resume({ scrollHander }) {
                 <div>
                     <p> Troubleshooting </p>
                     <p> Working with teams (word this better) </p>
-                    <p> Flexable </p>
+                    <p> Flexible  </p>
                     <p> Drive </p>
                 </div>
             </div>
 
             <div className="edu">
                 <h2>Education</h2>
-                <h3>Flation School</h3>
+                <h3>FlatIron School</h3>
                 <p>A leading Bootcamp, where my career coach told me what to put here   </p>
 
             </div>
 
             <div className="exp">
-                <h2>Experince</h2>
+                <h2>Experience</h2>
                 <h3>Ledios: Tier 2 IT support </h3>
-                <p>A did good as a tier two technian where i learned to manage my own projects work as a team and troubleshoot a wide variety of issues. </p>
+                <p>Here I talk about how i can work in a team and use software such as Jira and MS Office.   </p>
             </div>
         </ResumePage>
     )
@@ -102,8 +102,10 @@ background-color: whitesmoke;
 width: 100%;
 height: 100vh;
 overflow: auto;
-
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    font-family: 'Montserrat', sans-serif;
+
+
 #resume_title{
 
      font-family: 'Montserrat', sans-serif;

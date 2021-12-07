@@ -29,7 +29,7 @@ function Portfolio({ scrollHander } ) {
                 <img className="profile_image_right" src={blog} />
                 <div className="project" id="blog">
                     <h2 >The Goat Blog  </h2>
-                    <p> A side project to learn Rails. Created using React, and ruby on rails. This blog has BLA BLA BLA IDK  Includes OAuth for Authentication Fast API as the API. Axios/styled components... ect </p>
+                    <p> A side project to learn Rails. A side project to learn Rails. This blog has BLA BLA BLA   Includes OAuth for Authentication Fast API as the API. Axios/styled components... ect </p>
                     <a> Click here </a>
                 </div>
 
@@ -38,7 +38,7 @@ function Portfolio({ scrollHander } ) {
             <div className="project_container_left">
                 <div className="project" id="Tick">
                     <h2 >Tick-Tack-Toe  </h2>
-                    <p> A fully functional tick-tack-toe game, that tracks wins and losses/ties Worked on as a team with Jui and Josh.....maybe link...... </p>
+                    <p> A fully functional tick-tack-toe game, A fully functional tick-tack-toe game A fully functional tick-tack-toe game A fully functional tick-tack-toe game, A fully functional tick-tack-toe game A fully functional tick-tack-toe game </p>
                     <a> Click here </a>
                 </div>
                 <img className="profile_image_left" src={tick   } />
@@ -47,8 +47,8 @@ function Portfolio({ scrollHander } ) {
             <div className="project_container_right">
                 <img className="profile_image_right" src={blog} />
                 <div className="project" id="Crossword">
-                    <h2 >Crossword  </h2>
-                    <p> A side project to make a synamicly generated crossword puzzle. This will wandomly grab words from the dictonary and find matching words that will fit in a crossword board. Then show the words definition to allow you to guess the name of the word.  </p>
+                    <h2 >Phase 4 project  </h2>
+                    <p> My project for phase 4 where I did something! My project for phase 4 where I did something! My project for phase 4 where I did something! My project for phase 4 where I did something! My project for phase 4 where I did something! My project for phase 4 where I did something! My project for phase 4 where I did something!  </p>
                     <a> Click here </a>
                 </div>
             </div >
