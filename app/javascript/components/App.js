@@ -10,11 +10,11 @@ import "./global.css"
 
 function App() {
     return (
-        <MainBody  >
+        <MainBody   >
 
      
           <Routes>
-            <Route exact path="/" element={< Home />} />
+                <Route exact path="/" element={< Home   />} />
               <Route  path="/blogs/*" element={< BlogContainer />} /> 
             </Routes>
         </MainBody>

@@ -9,15 +9,25 @@ import TopBar from "./TopBar"
 import Intro
 
     from './Intro';
+import { func } from 'prop-types';
 function Home() {
 const [wheelLocation, setwheelLocation] = useState("intro")
     function scrollHander(e){
         setwheelLocation(e)
       
     }
+function scrollInfo(e){
+    console.log(e.target)
+}
+
+
+
+
+window.addEventListener("scroll",scrollInfo )
+
 
     return (
-        <Portfol >
+        <Portfol onScroll={() => console.log("hi")}  >
             <TopBar wheelLocation={wheelLocation} scrollHander={scrollHander} />
             <Intro scrollHander={scrollHander}  />
             <Portfolio scrollHander={scrollHander}  />
@@ -35,7 +45,7 @@ const Portfol = styled.div`
 
    font-family: 'Montserrat', sans-serif, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #eaecec;
-
+    font-weight: bolder
 
 
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function SideBar() {
   return (
-    <SideBar>
+    <SideBar >
       <nav className="sidebar" tabIndex="0">
         <header >
 

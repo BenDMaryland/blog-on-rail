@@ -100,6 +100,9 @@ const ResumePage = styled.div`
 * {box-sizing:border-box}
 background-color: whitesmoke;
 width: 100%;
+height: 100vh;
+overflow: auto;
+
    font-family: 'Montserrat', sans-serif;
 #resume_title{
 
@@ -157,17 +160,20 @@ margin-bottom: 100px;
 }
 
 .technologies{
-    position: relative;
+
     text-align: center;
     margin: auto;
+
     width: 50%;
     margin-left: 10px;
     margin-right: 0px;
     float: left;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
 }
 
 .softSkills{
-margin-bottom: 100px;
+margin-bottom: 30px;
 text-align: center;
 
 ;
@@ -185,6 +191,7 @@ text-align: center;
   padding-bottom: 10px; 
   padding-right: 10px;
   color: white; 
+  
 }
 
 .react {width: 90%; background-color: #b26baf;}

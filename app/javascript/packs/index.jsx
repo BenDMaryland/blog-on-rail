@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <BrowserRouter>
 
-      <App />
+      <App  />
 
     </BrowserRouter>,
     document.body.appendChild(document.createElement('div')),
