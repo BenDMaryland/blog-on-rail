@@ -5,7 +5,7 @@ import Portfolio from './Portfolio';
 
 
 function TopBar({ wheelLocation, scrollHander}) {
-    console.log(wheelLocation)
+
     return (
         <Top>
 

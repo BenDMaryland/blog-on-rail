@@ -7,7 +7,7 @@ function Resume({ scrollHander }) {
    
 
     return (
-        <ResumePage id="resume" onWheel={() => scrollHander("resume")}     >
+        <ResumePage id="resume" onMouseEnter={() => scrollHander("resume")}       >
             <h1 id="resume_title" style={{ "textAlign": "center" }}> Here Is My Resume </h1>
             <div className="header">
                 <br />
@@ -101,6 +101,7 @@ const ResumePage = styled.div`
 background-color: whitesmoke;
 width: 100%;
 height: 100vh;
+
 overflow: auto;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    font-family: 'Montserrat', sans-serif;
@@ -116,6 +117,7 @@ text-align: center;
 float: left;
 padding-left: auto;
 padding-right: auto;
+padding-top: auto;
 margin-left: 30px ;
 }
 

@@ -12,7 +12,7 @@ function Portfolio({ scrollHander } ) {
 
 
     return (
-        <Portfol id="portfolio" onWheel={() => scrollHander("portfolio")}  >
+        <Portfol id="portfolio" onMouseEnter={() => scrollHander("portfolio")}  >
             <div className="bar" > </div>
             <h1 id='projects_title' >Here Are Some Of My Projects</h1>
 

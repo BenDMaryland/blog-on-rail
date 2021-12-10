@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function Footer({ scrollHander}) {
     return (
-        <Foot id="footer" onWheel={() => scrollHander("footer")}  >
+        <Foot id="footer"  onMouseEnter={() => scrollHander("footer")} >
             <br />
             <br />
             <div className="tagline" >

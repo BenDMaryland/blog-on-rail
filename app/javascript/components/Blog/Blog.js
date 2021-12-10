@@ -4,6 +4,8 @@ import Comments from './Comments';
 import axios from 'axios'
 import CommentAdd from './CommentAdd';
 import styled from 'styled-components';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 function Blog() {
 
 
@@ -31,7 +33,8 @@ if (!fetchedBlog) return <h1>Loading</h1>
           <br/>
           <h2>{fetchedBlog.data.attributes.blog_title} </h2>  
           {/* <img   src={fetchedBlog.data.attributes.image_url}     />  */}
-          <p className="blog"  >{fetchedBlog.data.attributes.blog_post}</p>
+          {/* <p className="blog"  >{fetchedBlog.data.attributes.blog_post}</p> */}
+        <ReactMarkdown className="blog"  children={fetchedBlog.data.attributes.blog_post} remarkPlugins={[remarkGfm]} />
           <CommentAdd fetchedBlog={fetchedBlog} />
          {       fetchedBlog.included.map ( (comment)=> {  return      <Comments key={comment.id} comment={comment} />  }  )        }
         </BlogCard>
@@ -50,7 +53,7 @@ const BlogCard= styled.div `
 max-width: 80%;
 .blog{
 
-
+width: 100%;
   padding-right: 10%;
   overflow: inherit;
     	left: 10%;

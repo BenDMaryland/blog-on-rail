@@ -12,18 +12,13 @@ import Intro
 import { func } from 'prop-types';
 function Home() {
 const [wheelLocation, setwheelLocation] = useState("intro")
-    function scrollHander(e){
-        setwheelLocation(e)
+    function scrollHander(loc){
+        setwheelLocation(loc)
       
     }
-function scrollInfo(e){
-    console.log(e.target)
-}
 
 
-
-
-window.addEventListener("scroll",scrollInfo )
+// window.addEventListener("scroll",scrollInfo )
 
 
     return (
