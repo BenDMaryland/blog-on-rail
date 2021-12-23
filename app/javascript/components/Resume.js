@@ -8,10 +8,10 @@ function Resume({ scrollHander }) {
 
     return (
         <ResumePage id="resume" onMouseEnter={() => scrollHander("resume")}       >
-
+            <iframe className='iframe' src="https://docs.google.com/document/d/e/2PACX-1vTnrOU2CiSwKdY4T_gh7cb_PGJG9PN_MDygKoLQkqDSsl6vgQknbgi3G5r-bHx5TdX60agO5YSYjzOh/pub?embedded=true"></iframe>
             <div className='gridone'>
 
-                {/* <h1 id="resume_title" style={{ "textAlign": "center" }}> Here Is My Resume </h1> */}
+       
                 <div className="header">
                     <br />
 
@@ -70,16 +70,22 @@ export default Resume
 
 const ResumePage = styled.div`
 * {box-sizing:border-box}
+
 background-color: whitesmoke;
-width: 55%;
-margin-right: 23%;
-margin-left: 23%;
+width: 45%;
+margin-right: 22.5%;
+margin-left: 22.5%;
 height: fit-content;
 padding: 1%;
 overflow: auto;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    font-family: 'Montserrat', sans-serif;
 
+
+   .iframe{
+height: fit-content;
+width: fit-content;
+   }
 
 #resume_title{
 
