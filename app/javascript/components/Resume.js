@@ -8,6 +8,7 @@ function Resume({ scrollHander }) {
 
     return (
         <ResumePage id="resume" onMouseEnter={() => scrollHander("resume")}       >
+
             <div className='gridone'>
 
                 {/* <h1 id="resume_title" style={{ "textAlign": "center" }}> Here Is My Resume </h1> */}
@@ -73,7 +74,7 @@ background-color: whitesmoke;
 width: 55%;
 margin-right: 23%;
 margin-left: 23%;
-height: 100vh;
+height: fit-content;
 padding: 1%;
 overflow: auto;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -154,7 +155,8 @@ p{
 }
 
 h1{
-
+text-align:center;
+color:#cb8cc2;
 font-family: 'Roboto', sans-serif;
 }
 `
