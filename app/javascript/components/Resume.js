@@ -1,26 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
-import headshot from "../assets/images/Headshot.png"
+
 
 function Resume({ scrollHander }) {
 
-   
+
 
     return (
         <ResumePage id="resume" onMouseEnter={() => scrollHander("resume")}       >
-            <h1 id="resume_title" style={{ "textAlign": "center" }}> Here Is My Resume </h1>
-            <div className="header">
-                <br />
+            <div className='gridone'>
 
-                <h2 className="name"> Ben Darago</h2>
-                <h3>Fullstack Web Developer </h3>
-            </div>
-            <img id="resume_pic" src={headshot} />
-            <div className="bio">
-                <h2>Bio </h2>
-                <p> Hi here goes my Bio. I will put something here, with buzzwords.  Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. </p>
-            </div>
+                {/* <h1 id="resume_title" style={{ "textAlign": "center" }}> Here Is My Resume </h1> */}
+                <div className="header">
+                    <br />
 
+                    <h2 className="name"> Ben Darago</h2>
+                    <h3>Fullstack Web Developer </h3>
+                </div>
+                <div className="bio">
+                    <h2>Bio </h2>
+                    <p> Hi here goes my Bio. I will put something here, with buzzwords.  Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. </p>
+                </div>
+
+            </div>
 
             <div className="contacts">
                 <a  ><i className="fas fa-mobile"></i><span> 443-546-6043</span></a>
@@ -31,65 +33,34 @@ function Resume({ scrollHander }) {
                 <a href="https://twitter.com/BenjaminDarago" ><span><i className="fab fa-twitter"></i> Twitter</span></a>
             </div>
 
-            <div className="technologies" >
-                <h2> Technologies </h2>
+     
+             
 
-                <p className="tech">React </p>
-                <div className="bar_container">
-                    <div className="skills react">90%</div>
+            <div className="skills">
+                        <h2> Technologies  </h2>
+                        <p> Ruby, Rails, SQL, Javscript, React, Postgresql, Sql, Agile, Typescript, HTML, CSS</p>
+                    </div>
+
+                <div className="edu">
+                    <h2>Education</h2>
+                    <h3>FlatIron School</h3>
+                    <p>Coding bootcamp where I learned Ruby on Rails and React.js programing languages  </p>
+
                 </div>
 
-                <p>JavaScript </p>
-                <div className="bar_container">
-                    <div className="skills js">70%</div>
+                <div className="exp">
+                    <h2>Experience</h2>
+
+                    <h3>Ledios: Computer Operator 1</h3>
+                    <p>Performed top of my team and promoted to Tier two  </p>
+                    <p>Resolved majority of customer issues in ten to fifteen minutes  </p>
+
+                    <h3>Ledios: Tier 2 IT support </h3>
+                    <p>Served between twelve and thirty people to resolve a wide variety of IT issues.   </p>
+                    <p>Managed all IT service needs for Office of more than fifty employees  </p>
+
                 </div>
-
-                <p>Rails</p>
-                <div className="bar_container">
-                    <div className="skills rails">65%</div>
-                </div>
-
-                <p>Ruby</p>
-                <div className="bar_container">
-                    <div className="skills ruby">60%</div>
-                </div>
-
-                <p>HTML/CSS</p>
-                <div className="bar_container">
-                    <div className="skills html">65%</div>
-                </div>
-
-                <p>Typescript</p>
-                <div className="bar_container">
-                    <div className="skills typescript">30%</div>
-                </div>
-
-
-
-            </div>
-
-            <div className="softSkills" >
-                <h2> Skills  </h2>
-                <div>
-                    <p> Troubleshooting </p>
-                    <p> Working with teams (word this better) </p>
-                    <p> Flexible  </p>
-                    <p> Drive </p>
-                </div>
-            </div>
-
-            <div className="edu">
-                <h2>Education</h2>
-                <h3>FlatIron School</h3>
-                <p>A leading Bootcamp, where my career coach told me what to put here   </p>
-
-            </div>
-
-            <div className="exp">
-                <h2>Experience</h2>
-                <h3>Ledios: Tier 2 IT support </h3>
-                <p>Here I talk about how i can work in a team and use software such as Jira and MS Office.   </p>
-            </div>
+        
         </ResumePage>
     )
 }
@@ -99,9 +70,11 @@ export default Resume
 const ResumePage = styled.div`
 * {box-sizing:border-box}
 background-color: whitesmoke;
-width: 100%;
+width: 55%;
+margin-right: 23%;
+margin-left: 23%;
 height: 100vh;
-
+padding: 1%;
 overflow: auto;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    font-family: 'Montserrat', sans-serif;
@@ -117,16 +90,18 @@ text-align: center;
 float: left;
 padding-left: auto;
 padding-right: auto;
-padding-top: auto;
+padding-top: 0;
 margin-left: 30px ;
+margin-top:2%;
 }
 
-#resume_pic{
-    float: left;
-width: 200px;
-margin: auto;
+.gridone{
+display: grid;
+grid-template-columns:repeat(1, 1fr );
 
 }
+
+
 .bio{
     padding-left: auto;
 padding-right: auto;
@@ -140,14 +115,13 @@ padding-bottom: auto;
     width: fit-content;
     display: inline-flex;
     text-align: center;
-    padding-top: 55px;
+    padding-top: 30px;
 }
 
 
 .skills{
-text-align: right;
-display: flex;
-padding-left: 10px;
+text-align: center;
+display: block;
 }
 
 
@@ -163,47 +137,17 @@ margin-bottom: 100px;
 
 }
 
-.technologies{
-
-    text-align: center;
-    margin: auto;
-
-    width: 50%;
-    margin-left: 10px;
-    margin-right: 0px;
-    float: left;
-    padding-bottom: 20px;
-    background-color: whitesmoke;
-}
 
 .softSkills{
-margin-bottom: 30px;
 text-align: center;
+display: block;
 
 ;
 }
 
 
-.bar_container{
-  width: 100%; 
-  background-color: #ddd; 
-}
 
-.skills {
-  text-align: right; 
-  padding-top: 10px; 
-  padding-bottom: 10px; 
-  padding-right: 10px;
-  color: white; 
-  
-}
 
-.react {width: 90%; background-color: #b26baf;}
-.js {width: 70%; background-color: #964e98;}
-.rails {width: 65%; background-color: #c093eb;}
-.ruby  {width: 60%; background-color: #634173;}
-.html {width: 65%; background-color: #421c58;}
-.typescript  {width: 30%; background-color: #8c4e9c;}
 
 p{
     font-family: 'Roboto', sans-serif;
