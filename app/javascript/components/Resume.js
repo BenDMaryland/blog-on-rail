@@ -20,7 +20,7 @@ function Resume({ scrollHander }) {
                 </div>
                 <div className="bio">
                     <h2>Bio </h2>
-                    <p> Hi here goes my Bio. I will put something here, with buzzwords.  Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. Hi here goes my Bio. I will put something here, with buzzwords. </p>
+                    <p> Hi all my name is Ben Darago, I'm a software developer with a history in IT/help desk.  I have a passion for  learning new things, and moving beyond where I was yesterday. If I 'm not coding you'll most likely find me biking or cooking.</p>
                 </div>
 
             </div>
@@ -45,7 +45,7 @@ function Resume({ scrollHander }) {
                 <div className="edu">
                     <h2>Education</h2>
                     <h3>FlatIron School</h3>
-                    <p>Coding bootcamp where I learned Ruby on Rails and React.js programing languages  </p>
+                    <p>A fast  paced coding bootcamp where I learned Ruby on Rails and React.js programing languages  </p>
 
                 </div>
 

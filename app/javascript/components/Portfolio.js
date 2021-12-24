@@ -24,7 +24,7 @@ function Portfolio({ scrollHander }) {
                 <div className='project_left'>
                     <div className="project" id="agile">
                         <h2>Description </h2>
-                        <p className="descrip" >A project management application where teams can create projects track progress create KBA's and see live feedback of team members performance. My final project for FlatIron. For this I wanted to create a project where I could track my own progress as I built the application.  </p>
+                        <p className="descrip" >A project management application where teams can create projects track progress create KBA's and see live feedback of team members performance. My final project for FlatIron. For this I wanted to create a project where I could track my own progress as I built the application. || Currently a work in progress to be completed january 6th </p>
                        <h2>Difficulties  </h2>
                         <p className="descrip" >My two biggest challenges for this project were, figuring out how to create the methods to track progress in the backend, and adding the teams functionality.  </p>
                         <h2>Solutions </h2>
@@ -34,6 +34,7 @@ function Portfolio({ scrollHander }) {
                     </div>
                     <div className='links_container'>
                         <img className="profile_image_left" src={agile} />
+                        <p>To see all features of this page please use the default login / New accounts have limited access</p>
                         <h2>Features </h2>
                         <ul>
                             <li>The teams featurres allows multiple teams to work on independent projects separately  </li>
