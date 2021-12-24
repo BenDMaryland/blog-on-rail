@@ -8,7 +8,7 @@ function Resume({ scrollHander }) {
 
     return (
         <ResumePage id="resume" onMouseEnter={() => scrollHander("resume")}       >
-            <iframe className='iframe' src="https://docs.google.com/document/d/e/2PACX-1vTnrOU2CiSwKdY4T_gh7cb_PGJG9PN_MDygKoLQkqDSsl6vgQknbgi3G5r-bHx5TdX60agO5YSYjzOh/pub?embedded=true"></iframe>
+            {/* <iframe className='iframe' src="https://docs.google.com/document/d/e/2PACX-1vTnrOU2CiSwKdY4T_gh7cb_PGJG9PN_MDygKoLQkqDSsl6vgQknbgi3G5r-bHx5TdX60agO5YSYjzOh/pub?embedded=true"></iframe> */}
             <div className='gridone'>
 
        

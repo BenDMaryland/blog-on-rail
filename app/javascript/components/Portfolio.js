@@ -37,11 +37,11 @@ function Portfolio({ scrollHander }) {
                         <p>To see all features of this page please use the default login / New accounts have limited access</p>
                         <h2>Features </h2>
                         <ul>
-                            <li>The teams featurres allows multiple teams to work on independent projects separately  </li>
+                            <li>The teams features allows multiple teams to work on independent projects separately  </li>
                             <li>KBA's allow teams to have one location for as a repository for all data </li>
                             <li>The Users and Projects tabs, allow managers to track User and project progress</li>
                             <li>Admin and Boss role allows for separation of duties</li>
-                            <li>Email.js Allows for high Visability of high impact issues</li>
+                            <li>Email.js Allows for high visibility of high impact issues</li>
                             <li>Draft.Js allows user to format KBA's using rich text </li>
                         </ul>
                     </div>
