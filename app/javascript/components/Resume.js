@@ -8,8 +8,19 @@ function Resume({ scrollHander }) {
 
     return (
         <ResumePage id="resume" onMouseEnter={() => scrollHander("resume")}       >
-            {/* <iframe className='iframe' src="https://docs.google.com/document/d/e/2PACX-1vTnrOU2CiSwKdY4T_gh7cb_PGJG9PN_MDygKoLQkqDSsl6vgQknbgi3G5r-bHx5TdX60agO5YSYjzOh/pub?embedded=true"></iframe> */}
-            <div className='gridone'>
+
+            <iframe
+                style={{
+                    width: "90vw",
+                    height: "100vh",
+                    alignContent: 'center',
+                    justifyContent: 'center',
+                    overflow: "hidden",
+                    marginRight: '30%',
+                    marginLeft: '30%'
+                }}
+                src="https://docs.google.com/document/d/e/2PACX-1vTnrOU2CiSwKdY4T_gh7cb_PGJG9PN_MDygKoLQkqDSsl6vgQknbgi3G5r-bHx5TdX60agO5YSYjzOh/pub?embedded=true"></iframe>
+            {/* <div className='gridone'>
 
        
                 <div className="header">
@@ -60,9 +71,9 @@ function Resume({ scrollHander }) {
                     <p>Served between twelve and thirty people to resolve a wide variety of IT issues.   </p>
                     <p>Managed all IT service needs for Office of more than fifty employees  </p>
 
-                </div>
-        
-        </ResumePage>
+                </div> */}
+
+        </ResumePage >
     )
 }
 
@@ -72,97 +83,16 @@ const ResumePage = styled.div`
 * {box-sizing:border-box}
 
 background-color: whitesmoke;
-width: 45%;
-margin-right: 22.5%;
-margin-left: 22.5%;
-height: fit-content;
-padding: 1%;
+width: 100%;
+
 overflow: auto;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    font-family: 'Montserrat', sans-serif;
-
-
-   .iframe{
-height: fit-content;
-width: fit-content;
-   }
-
-#resume_title{
-
-     font-family: 'Montserrat', sans-serif;
+iframe{
+     position: ;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px
 }
 
-.header{
-text-align: center;
-float: left;
-padding-left: auto;
-padding-right: auto;
-padding-top: 0;
-margin-left: 30px ;
-margin-top:2%;
-}
-
-.gridone{
-display: grid;
-grid-template-columns:repeat(1, 1fr );
-
-}
-
-
-.bio{
-    padding-left: auto;
-padding-right: auto;
-margin-left: 30px ;
-padding-bottom: auto;
-}
-
-.contacts{
-    flex: auto;
-    margin: auto;
-    width: fit-content;
-    display: inline-flex;
-    text-align: center;
-    padding-top: 30px;
-}
-
-
-.skills{
-text-align: center;
-display: block;
-}
-
-
-.edu{
-text-align: center;
-margin-bottom: 100px;
-
-
-}
-.exp{
-text-align: center;
-margin-bottom: 100px;
-
-}
-
-
-.softSkills{
-text-align: center;
-display: block;
-
-;
-}
-
-
-
-
-
-p{
-    font-family: 'Roboto', sans-serif;
-}
-
-h1{
-text-align:center;
-color:#cb8cc2;
-font-family: 'Roboto', sans-serif;
-}
 `
