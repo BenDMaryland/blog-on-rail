@@ -11,15 +11,14 @@ function Resume({ scrollHander }) {
 
             <iframe
                 style={{
-                    width: "800px",
+                    width: "720px",
                     height: "80vh",
-                    alignContent: 'center',
-                    justifyContent: 'center',
                     overflow: "hidden",
-                    marginRight: '30%',
-                    marginLeft: '30%',
+                    left:" 50 %",
+                    transform: "translate(0,-50 %)",
                     minHeight: "900px",
-                        border: 'beige'
+                    border: 'beige', 
+                    justifySelf: "center"
                 }}
                 src="https://docs.google.com/document/d/e/2PACX-1vTnrOU2CiSwKdY4T_gh7cb_PGJG9PN_MDygKoLQkqDSsl6vgQknbgi3G5r-bHx5TdX60agO5YSYjzOh/pub?embedded=true"></iframe>
           
@@ -33,17 +32,17 @@ const ResumePage = styled.div`
 * {box-sizing:border-box}
 
 background-color: whitesmoke;
-width: 100%;
-    min-height: 900px;
-
+  display: grid;
+  grid-template-rows: 80vh;
+  grid-template-columns: 100vw;
 overflow: hidden;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    font-family: 'Montserrat', sans-serif;
-iframe{
-     position: ;
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -25px
-}
+/* iframe{
+
+justify-self: center;
+
+
+} */
 
 `
