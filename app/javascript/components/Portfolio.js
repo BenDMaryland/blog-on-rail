@@ -30,7 +30,8 @@ function Portfolio({ scrollHander }) {
                         <h2>Solutions </h2>
                         <p className="descrip" >For serving data in the correct format I had to learn some new Ruby methods for managing time. Mainly, this allowed me to segregate data based on the dates which then allowed me to create the graphs to track progress. As for the teams functonality, that is a work in progress</p>
                         <a className="links" href="https://bens-agile.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live Site</a>
-                        <a className="links" href="https://github.com/BenDMaryland/final-project-v4" target="_blank" rel="noopener noreferrer">github</a>
+                        <a className="links" href="https://www.youtube.com/watch?v=BkXrwttoKd4" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a className="links" href="https://github.com/BenDMaryland/final-project-v4" target="_blank" rel="noopener noreferrer">Github</a>
                     </div>
                     <div className='links_container'>
                         <img className="profile_image_left" src={agile} />
@@ -56,18 +57,18 @@ function Portfolio({ scrollHander }) {
                         <img className="profile_image_left" src={blog} />
                         <h2>Features </h2>
                         <ul>
-                            <li>An online blog showcasing my time at FlatIron </li>
-                            <li>Uses React Markdown to allow for markdown text while making new posts. </li>
-                            <li>Developed using  Fast API, ActiveRecord, Postgresql to manage database</li>
+                            <li>Lorem ipsum dolore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </li>        
+                            <li>Lorem ipsum dolore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </li>
+                             <li>Lorem ipsum dolore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </li>
                         </ul>
                     </div>
                     <div className="project" id="blog">
                         <h2>Description </h2>
-                        <p className="descrip" >A tick-tack-toe game where users can create characters and play against each other as well as track the winners/losers record as well as previous game-states.    </p>
+                        <p className="descrip" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris   </p>
                         <h2>Difficulties  </h2>
                         <p className="descrip" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
                         <h2>Solutions </h2>
-                        <p className="descrip" >The solution to this was to just take it slow and figure it out on the way. One of the best choices I made here was to  make code that works, even if it isn't scalable or following  best practices. and refactor later. This really helped me progress the app and learn more. </p>
+                        <p className="descrip" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </p>
                         <a className="links" href="https://www.youtube.com/watch?v=pquDnnZYabs" target="_blank" rel="noopener noreferrer">Demo</a>
                         <a className="links" href="https://github.com/andesjoshua/tick-tack-toe" target="_blank" rel="noopener noreferrer">Front-End</a>
                         <a className="links" href="https://github.com/BenDMaryland/phase-3-sinatra-react-project" target="_blank" rel="noopener noreferrer">Back-End</a>
@@ -134,13 +135,14 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 padding-bottom: 10px;
 padding-top: 40px;
 margin-left: 5%;
+    margin-right: 20px;
 margin-top: 15px;
 background-color: #f5f5f5;
 }
 
 .profile_image_left{
 
-margin-left: 5%;
+margin-left: 30%;
   background-color: #f5f5f5;
 }
 
@@ -151,6 +153,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 padding-bottom: 40px;
 background-color: #f5f5f5;
 padding-top: 40px;
+    margin-left: 20px;
 margin-right: 5%;
 margin-top: 15px;
 }
@@ -203,12 +206,12 @@ margin-bottom:0 ;
 
 .project_left{
 display: grid;
-grid-template-columns:repeat(1, 2fr 1fr );
+grid-template-columns:repeat(1, 1fr 1fr );
 height: fit-content;
 }
 .project_right{
 display: grid;
-grid-template-columns:repeat(1, 1fr 2fr );
+grid-template-columns:repeat(1, 1fr 1fr );
 height: fit-content;
 }
 .links{
