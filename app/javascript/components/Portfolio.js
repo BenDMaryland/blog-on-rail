@@ -50,27 +50,27 @@ function Portfolio({ scrollHander }) {
 
 
             <div className="project_container_right">
-                <h2 className="title" > The Goat Blog</h2>
+                <h2 className="title" > The Greatest Battle of All Time</h2>
                 <div className='project_right'>
                                       <div className='links_container'>
                         <img className="profile_image_left" src={blog} />
                         <h2>Features </h2>
                         <ul>
                             <li>An online blog showcasing my time at FlatIron </li>
-                            <li>To have OAUTH for user authentication </li>
                             <li>Uses React Markdown to allow for markdown text while making new posts. </li>
                             <li>Developed using  Fast API, ActiveRecord, Postgresql to manage database</li>
                         </ul>
                     </div>
                     <div className="project" id="blog">
                         <h2>Description </h2>
-                        <p className="descrip" >A blog detailing my time at flatIron, created using created with react and rails . this was my first rails app so I did things  a bit diffrently than I do now, such as using Fast API and Axios.   </p>
+                        <p className="descrip" >A tick-tack-toe game where users can create characters and play against each other as well as track the winners/losers record as well as previous game-states.    </p>
                         <h2>Difficulties  </h2>
-                        <p className="descrip" >The biggest challenge for me was going into this with no knowledge of rails at all.  So this is where I leanred about MVC, Serializers, and a whole lot more.   </p>
+                        <p className="descrip" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
                         <h2>Solutions </h2>
                         <p className="descrip" >The solution to this was to just take it slow and figure it out on the way. One of the best choices I made here was to  make code that works, even if it isn't scalable or following  best practices. and refactor later. This really helped me progress the app and learn more. </p>
-                        <a className="links" href="https://a-blog-on-rails.herokuapp.com/blogs" target="_blank" rel="noopener noreferrer">Live Site</a>
-                        <a className="links" href="https://github.com/BenDMaryland/blog-on-rail" target="_blank" rel="noopener noreferrer">github</a>
+                        <a className="links" href="https://www.youtube.com/watch?v=pquDnnZYabs" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a className="links" href="https://github.com/andesjoshua/tick-tack-toe" target="_blank" rel="noopener noreferrer">Front-End</a>
+                        <a className="links" href="https://github.com/BenDMaryland/phase-3-sinatra-react-project" target="_blank" rel="noopener noreferrer">Back-End</a>
                     </div>
                 </div>
             </div>
