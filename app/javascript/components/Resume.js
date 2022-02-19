@@ -12,7 +12,7 @@ function Resume({ scrollHander }) {
             <iframe
                 style={{
                     width: "720px",
-                    height: "80vh",
+                    height: "110%",
                     overflow: "hidden",
                     left:" 50 %",
                     transform: "translate(0,-50 %)",
@@ -33,7 +33,7 @@ const ResumePage = styled.div`
 
 background-color: whitesmoke;
   display: grid;
-  grid-template-rows: 80vh;
+
   grid-template-columns: 100vw;
 overflow: hidden;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
