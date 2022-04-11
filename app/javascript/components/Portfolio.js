@@ -119,7 +119,7 @@ h2{
 }
 
 .bar{
-    width: 100vw;
+    width: 100%;
     border: solid;
     border-width: 1px;
     border-color: black;
