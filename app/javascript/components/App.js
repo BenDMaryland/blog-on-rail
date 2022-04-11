@@ -36,6 +36,8 @@ body{
     height: 100vh;
     background-color: #f5fafa;
     margin: 0px;
+      paddding: 0;
+  margin: 0;
 }
 
 
